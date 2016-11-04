@@ -1,0 +1,97 @@
+html,
+body,
+.container-fluid,
+.row:nth-child(1) {
+  height: 100%; }
+
+/*-------------------------------------
+Theme Colors
+---------------------------------------*/
+/*------------------------------------
+Font Families
+---------------------------------------*/
+/*-------------------------------------
+Body
+---------------------------------------*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4em;
+  background-color: #211917;
+  font-family: 'Raleway', sans-serif;
+  text-align: center; }
+
+/*-------------------------------------
+Navigation
+---------------------------------------*/
+.container-fluid .row.nav {
+  background-color: #645F5E;
+  height: 64px; }
+  .container-fluid .row.nav .log-in {
+    margin-left: 80px;
+    text-transform: uppercase;
+    color: #211917;
+    float: left; }
+    .container-fluid .row.nav .log-in label {
+      margin-top: 14px;
+      font-size: 14px; }
+      .container-fluid .row.nav .log-in label input {
+        background-color: #211917;
+        border: none;
+        padding: 8px;
+        padding-left: 11px;
+        font-size: 14px;
+        font-weight: 300px;
+        letter-spacing: .5 px;
+        margin-right: 3px;
+        margin-left: 3px; }
+
+.container-fluid button.submit {
+  background-color: #C4C0C9;
+  color: #211917;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 3px;
+  padding-top: 3.5px; }
+
+.container-fluid h3 {
+  font-size: 16px;
+  float: right;
+  margin-right: 80px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #C4C0C9;
+  margin-top: 24px; }
+
+/*-------------------------------------
+Main
+---------------------------------------*/
+.new-entry h1 {
+  font-size: 81px;
+  color: #9A6B6A;
+  font-family: Lobster;
+  margin-bottom: 40px;
+  margin-top: 40px; }
+
+.new-entry img {
+  position: absolute;
+  margin-left: 193px;
+  width: 65px;
+  margin-top: 4px; }
+
+.new-entry form .new-todo {
+  width: 555px;
+  height: 52px;
+  background-color: #493739;
+  border: none;
+  margin-top: 23px;
+  margin-bottom: 7px;
+  letter-spacing: 1px;
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: 600; }
+
+/*-------------------------------------
+Style Placeholder Text
+---------------------------------------*/

@@ -1,11 +1,165 @@
-$colorDark = #211917;
-$colorClay= #645F5E;
-$colorMid = #493739;
-$colorLight = #C4C0C9;
-$colorBlush = #9A6B6A;
+html,
+body,
+.container-fluid,
+.row:nth-child(1) {
+            height: 100%;
+}
+
+
+/*-------------------------------------
+Theme Colors
+---------------------------------------*/
+
+$colorDark: #211917;
+$colorClay: #645F5E;
+$colorMid: #493739;
+$colorLight: #C4C0C9;
+$colorBlush: #9A6B6A;
+
+/*------------------------------------
+Font Families
+---------------------------------------*/
+
+// font-family: 'Lobster', cursive;
+// font-family: 'Raleway', sans-serif;
+// Raleway:300,400,500,600
+
+/*-------------------------------------
+Body
+---------------------------------------*/
 
 body {
             font-family: 'Open Sans', sans-serif;
             line-height: 1.4em;
-            color: $colorDark;
+            background-color: $colorDark;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
 }
+
+
+/*-------------------------------------
+Navigation
+---------------------------------------*/
+
+.container-fluid {
+            .row.nav {
+                        background-color: $colorClay;
+                        height: 64px;
+                        .log-in {
+                                    margin-left: 80px;
+                                    text-transform: uppercase;
+                                    color: $colorDark;
+                                    float: left;
+                                    label {
+                                                margin-top: 14px;
+                                                font-size: 14px;
+                                                input {
+                                                            background-color: $colorDark;
+                                                            border: none;
+                                                            padding: 8px;
+                                                            padding-left: 11px;
+                                                            font-size: 14px;
+                                                            font-weight: 300px;
+                                                            letter-spacing: .5 px;
+                                                            margin-right: 3px;
+                                                            margin-left: 3px;
+                                                }
+                                    }
+                        }
+            }
+
+            button.submit {
+                        background-color: $colorLight;
+                        color: $colorDark;
+                        border: none;
+                        font-size: 14px;
+                        font-weight: 600;
+                        margin-left: 3px;
+                        padding-top: 3.5px;
+            }
+
+            h3 {
+                        font-size: 16px;
+                        float: right;
+                        margin-right: 80px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        font-weight: 600;
+                        color: $colorLight;
+                        margin-top: 24px;
+            }
+}
+
+
+/*-------------------------------------
+Main
+---------------------------------------*/
+
+.new-entry {
+            h1 {
+                        font-size: 81px;
+                        color: #9A6B6A;
+                        font-family: Lobster;
+                        margin-bottom: 40px;
+                        margin-top: 40px;
+            }
+            img {
+                        position: absolute;
+                        margin-left: 193px;
+                        width: 65px;
+                        margin-top: 4px;
+            }
+            form {
+                        .new-todo {
+                                    width: 555px;
+                                    height: 52px;
+                                    background-color: #493739;
+                                    border: none;
+                                    margin-top: 23px;
+                                    margin-bottom: 7px;
+                                    letter-spacing: 1px;
+                                    padding-left: 40px;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                        }
+            }
+}
+
+
+/*-------------------------------------
+Style Placeholder Text
+---------------------------------------*/
+
+// ::-webkit-input-placeholder {
+//             color: $colorLight;
+//             font-size: 18px;
+//             font-weight: 400;
+//             padding-left: 40px;
+//             padding-top: 7px;
+// }
+// :-moz-placeholder {
+//             /* Firefox 18- */
+//             color: $colorLight;
+//             font-size: 21px;
+//             font-weight: 400;
+//             padding-left: 40px;
+//             padding-top: 5px;
+//             text-transform: uppercase;
+// }
+// ::-moz-placeholder {
+//             /* Firefox 19+ */
+//             color: $colorLight;
+//             font-size: 21px;
+//             font-weight: 400;
+//             padding-left: 40px;
+//             padding-top: 5px;
+//             letter-spacing: 3px;
+// }
+// :-ms-input-placeholder {
+//             color: $colorLight;
+//             font-size: 21px;
+//             font-weight: 400;
+//             padding-left: 40px;
+//             padding-top: 5px;
+//             letter-spacing: 3px;
+// }
