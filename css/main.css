@@ -64,6 +64,13 @@ Navigation
   color: #C4C0C9;
   margin-top: 24px; }
 
+.container-fluid p {
+  font-size: 21px;
+  margin-top: 25px;
+  color: #645F5E;
+  font-weight: 400;
+  margin-bottom: 33px; }
+
 /*-------------------------------------
 Main
 ---------------------------------------*/
@@ -71,24 +78,24 @@ Main
   font-size: 81px;
   color: #9A6B6A;
   font-family: Lobster;
-  margin-bottom: 40px;
+  margin-bottom: 18px;
   margin-top: 40px; }
 
 .new-entry img {
   position: absolute;
-  margin-left: 193px;
+  margin-left: 200px;
   width: 65px;
   margin-top: 4px; }
 
 .new-entry form .new-todo {
-  width: 555px;
+  width: 600px;
   height: 52px;
   background-color: #493739;
   border: none;
   margin-top: 23px;
   margin-bottom: 7px;
   letter-spacing: 1px;
-  padding-left: 40px;
+  padding-left: 50px;
   font-size: 20px;
   font-weight: 600; }
 

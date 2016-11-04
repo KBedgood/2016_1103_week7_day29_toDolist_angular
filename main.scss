@@ -67,7 +67,6 @@ Navigation
                                     }
                         }
             }
-
             button.submit {
                         background-color: $colorLight;
                         color: $colorDark;
@@ -77,7 +76,6 @@ Navigation
                         margin-left: 3px;
                         padding-top: 3.5px;
             }
-
             h3 {
                         font-size: 16px;
                         float: right;
@@ -87,6 +85,13 @@ Navigation
                         font-weight: 600;
                         color: $colorLight;
                         margin-top: 24px;
+            }
+            p {
+                        font-size: 21px;
+                        margin-top: 25px;
+                        color: $colorClay;
+                        font-weight: 400;
+                        margin-bottom: 33px;
             }
 }
 
@@ -100,25 +105,25 @@ Main
                         font-size: 81px;
                         color: #9A6B6A;
                         font-family: Lobster;
-                        margin-bottom: 40px;
+                        margin-bottom: 18px;
                         margin-top: 40px;
             }
             img {
                         position: absolute;
-                        margin-left: 193px;
+                        margin-left: 200px;
                         width: 65px;
                         margin-top: 4px;
             }
             form {
                         .new-todo {
-                                    width: 555px;
+                                    width: 600px;
                                     height: 52px;
                                     background-color: #493739;
                                     border: none;
                                     margin-top: 23px;
                                     margin-bottom: 7px;
                                     letter-spacing: 1px;
-                                    padding-left: 40px;
+                                    padding-left: 50px;
                                     font-size: 20px;
                                     font-weight: 600;
                         }
