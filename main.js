@@ -3,7 +3,7 @@
 
 // Save all inventory data in an array:
     angular
-        .module('shopular', [])
+        .module('stabList', [])
     
 
 })();

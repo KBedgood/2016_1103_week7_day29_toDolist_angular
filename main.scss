@@ -57,13 +57,22 @@ Navigation
                                                             background-color: $colorDark;
                                                             border: none;
                                                             padding: 8px;
-                                                            padding-left: 11px;
-                                                            font-size: 14px;
-                                                            font-weight: 300px;
+                                                            padding-left: 12px;
                                                             letter-spacing: .5 px;
                                                             margin-right: 3px;
                                                             margin-left: 3px;
+                                                            color: $colorLight;
+                                                            font-weight: 500;
                                                 }
+                                                // input[type=text] {
+                                                //             font-size: 14px;
+                                                //             font-family: Raleway;
+                                                // }
+                                                // input[type=value] {
+                                                //             font-size: 14px;
+                                                //             font-family: Raleway;
+                                                //             font-weight: 300px !important;
+                                                // }
                                     }
                         }
             }
@@ -87,11 +96,13 @@ Navigation
                         margin-top: 24px;
             }
             p {
-                        font-size: 21px;
+                        font-size: 24px;
                         margin-top: 25px;
-                        color: $colorClay;
-                        font-weight: 400;
-                        margin-bottom: 33px;
+                        color: #645F5E;
+                        font-weight: 500;
+                        margin-bottom: 21px;
+                        line-height: 30px;
+                        letter-spacing: .25px;
             }
 }
 
@@ -110,23 +121,75 @@ Main
             }
             img {
                         position: absolute;
-                        margin-left: 200px;
+                        margin-left: 175px;
                         width: 65px;
                         margin-top: 4px;
             }
-            form {
-                        .new-todo {
-                                    width: 600px;
-                                    height: 52px;
-                                    background-color: #493739;
-                                    border: none;
-                                    margin-top: 23px;
-                                    margin-bottom: 7px;
-                                    letter-spacing: 1px;
-                                    padding-left: 50px;
-                                    font-size: 20px;
-                                    font-weight: 600;
+            .item {
+                        width: 45%;
+                        margin: 0 auto;
+                        position: relative;
+                        .actions {
+                                    position: absolute;
+                                    top: 37px;
+                                    right: 22px;
+                                    font-size: 24px;
+                                    color: $colorBlush;
+                                    i {
+                                                margin-right: 7px;
+                                    }
                         }
+                        form {
+                                    .new-todo {
+                                                color: $colorLight;
+                                                height: 52px;
+                                                background-color: #493739;
+                                                border: none;
+                                                margin-top: 23px;
+                                                margin-bottom: 7px;
+                                                letter-spacing: 1px;
+                                                padding-left: 33px;
+                                                font-size: 20px;
+                                                font-weight: 300;
+                                                width: 100%;
+                                    }
+                        }
+            }
+}
+
+footer {
+            width: 45%;
+            margin: 0 auto;
+            display: inline-block;
+}
+
+nav {
+            margin-top: 14px;
+            ul {
+                        padding: 0;
+                        li {
+                                    display: inline-block;
+                                    list-style-type: none;
+                                    button {
+                                                background-color: #9A6B6A;
+                                                border: none;
+                                                padding: 8px;
+                                                margin-left: 2px;
+                                                width: 100px;
+                                                font-size: 12px;
+                                                text-transform: uppercase;
+                                                padding-top: 12px;
+                                                font-weight: 600;
+                                    }
+                                    .show-all {}
+                                    .show-active {}
+                                    .show-completed {}
+                        }
+            }
+            .remaining {
+                        margin-top: 12px;
+                        font-family: lobster;
+                        font-size: 18px;
             }
 }
 
