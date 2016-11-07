@@ -6,15 +6,7 @@ An expression displays values on the page
 A filter formats the value of an expression
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/*----------------------------------------------------------------------------------------------------------------------------------------------------
-CLOAK : The ngCloak directive is used to prevent the Angular html template from being briefly displayed 
-by the browser in its raw (uncompiled) form while your application is loading. Use this directive to 
-avoid the undesirable flicker effect caused by the html template display.
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
-}
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------
 Main JS

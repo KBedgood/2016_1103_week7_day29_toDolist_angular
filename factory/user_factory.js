@@ -22,7 +22,7 @@ The FACTORY manipulates data (adding / deleting to array, marking as complete...
                 }
 
                 let getUser = function() {
-                    if (localStorage.getItem(user)) {
+                    if (localStorage.getItem('user')) {
                         return JSON.parse(localStorage.getItem("user"));
                       
                     }

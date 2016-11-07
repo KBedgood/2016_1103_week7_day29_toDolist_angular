@@ -20,19 +20,23 @@ A filter formats the value of an expression
 
 <body ng-controller='ToDoController as todo'>
             <div class="container-fluid">
-                        <div class="row nav">
-                                    <div class="col-md-6">
-                                                <div ng-controller='UserController as user' class="log-in">
-                                                            <label>Log In
-                                                                        <input type="text" ng-model='user.firstName' placeholder="First Name...">
-                                                                        <input type="text" ng-model='user.lastName' placeholder="Last Name...">
-                                                            </label>
-                                                            <button type="submit" class="submit">SUBMIT</button>
+                        <div class="row">
+                                    <div ng-controller='UserController as user' class="nav">
+                                                <div class="col-md-6">
+                                                            <div class="log-in">
+                                                                        <form ng-submit='user.login()'>
+                                                                                    <label>Log In
+                                                                                                <input type="text" ng-model='user.firstName' placeholder="First Name...">
+                                                                                                <input type="text" ng-model='user.lastName' placeholder="Last Name...">
+                                                                                    </label>
+                                                                                    <button type="submit" class="submit">SUBMIT</button>
+                                                                        </form>
+                                                            </div>
                                                 </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                                <div class="user-logged-in">
-                                                            <h3 class="namaslay">Namaslay, {{user.firstName}} {{user.lastName}}!</h3>
+                                                <div ng-if="user.loggedInUser.name" class="col-md-6">
+                                                            <div class="user-logged-in">
+                                                                        <h3 class="namaslay">Namaslay, {{user.loggedInUser.name}}!</h3>
+                                                            </div>
                                                 </div>
                                     </div>
                         </div>
@@ -59,7 +63,7 @@ A filter formats the value of an expression
                                     </div>
                                     <div class="item">
                                                 <div class="actions">
-                                                <!-- <i class="fa fa-check-circle" aria-hidden="true"></i> -->
+                                                            <!-- <i class="fa fa-check-circle" aria-hidden="true"></i> -->
                                                 </div>
                                                 <div class="knife ">
                                                             <img src="/images/knife_PNG1512_small.png " alt="cut it ">
@@ -83,16 +87,16 @@ A filter formats the value of an expression
                                                             <button class='show-completed'>Completed</button>
                                                 </li>
                                     </ul>
-                                    <p class='remaining'><span class='incomplete-items'>0</span> items left</p>
-                        </nav>
+<!--                                     <p class='remaining'><span class='incomplete-items'>0</span> items left</p>
+ -->                        </nav>
             </footer>
-</div>
+            </div>
             <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js "></script>
             <script src='main.js'></script>
             <script src='factory/main_factory.js'></script>
-            <script src='controllers/user_controller.js'></script>
+            <script src='factory/user_factory.js'></script>
+            <script src='controller/user_controller.js'></script>
             <script src='controller/main_controller.js'></script>
-            <script src='controllers/user_controller.js'></script>
 </body>
 
 </html>

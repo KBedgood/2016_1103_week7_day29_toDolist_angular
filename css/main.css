@@ -1,12 +1,6 @@
 /*----------------------------------------------------------------------------------------------------------------------------------------------------
 Hack from Jake
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
-html,
-body,
-.container-fluid,
-.row:nth-child(1) {
-  height: 100%; }
-
 /*----------------------------------------------------------------------------------------------------------------------------------------------------
 Theme Colors
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -26,19 +20,18 @@ body {
 /*----------------------------------------------------------------------------------------------------------------------------------------------------
 Navigation
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.container-fluid .row.nav {
+.container-fluid .nav {
   background-color: #645F5E;
-  height: 19%;
   width: 100%; }
-  .container-fluid .row.nav .log-in {
+  .container-fluid .nav .log-in {
     margin-left: 80px;
     text-transform: uppercase;
     color: #211917;
     float: left; }
-    .container-fluid .row.nav .log-in label {
+    .container-fluid .nav .log-in label {
       margin-top: 14px;
       font-size: 14px; }
-      .container-fluid .row.nav .log-in label input {
+      .container-fluid .nav .log-in label input {
         background-color: #211917;
         border: none;
         padding: 8px;
@@ -47,7 +40,8 @@ Navigation
         margin-right: 3px;
         margin-left: 3px;
         color: #C4C0C9;
-        font-weight: 500; }
+        font-weight: 500;
+        margin-bottom: 7px; }
 
 .container-fluid button.submit {
   background-color: #C4C0C9;
@@ -89,14 +83,16 @@ Main
 
 .new-entry img {
   position: absolute;
-  margin-left: 175px;
   width: 65px;
-  margin-top: 4px; }
+  margin-top: 4px;
+  right: 40px; }
 
 .new-entry .item {
   width: 45%;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  display: block;
+  clear: both; }
   .new-entry .item .actions {
     position: absolute;
     top: 37px;

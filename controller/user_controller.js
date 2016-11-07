@@ -16,11 +16,11 @@ Handles any interaction with the user and taking data from the factory and prese
 
     angular
         .module('stabList')
-        .factory('userController', function(user) {
+        .controller('UserController', function(user) {
 
             let vm = this;
 
-            vm.loggedInUser = getUser();
+            vm.loggedInUser = user.getUser();
 
             vm.login = function() {
 
@@ -28,16 +28,14 @@ Handles any interaction with the user and taking data from the factory and prese
                 Grabs name from the view...
                 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-                alert(vm.user.name)
-
-                let user = {
-                    name: vm.user.name,
+                let newUser = {
+                    name: vm.firstName+" "+vm.lastName,
                     time: Date.now(),
                 }
 
-                user.loginUser(userName);
+                user.loginUser(newUser);
 
-                vm.loggedInUser = userName;
+                vm.loggedInUser = newUser;
 
             }
         });
