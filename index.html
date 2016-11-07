@@ -1,3 +1,9 @@
+<!-- AngularJS 1.X
+A module contains the different components of an AngularJS app
+A controller manages the app's data
+An expression displays values on the page
+A filter formats the value of an expression
+-->
 <!DOCTYPE html>
 <html ng-app='stabList'>
 
@@ -34,65 +40,59 @@
                                     <div class="col-md-12 ">
                                                 <div>
                                                             <h1>Ok! Let's Slay Some Shit.</h1>
-                                                            <p>Gotta get shit done? Feeling extra stabby?<br>We feel you – let's make a list and slay.</p>
-                                                </div>
-                                                <div>
-
-<!-- item in todo.items is my for each loop
- -->                                                            <div ng-repeat='item in todo.items track by $index' class="item">
-                                                                        <div class="actions">
-<!--                                                                                     <i class="fa fa-check-circle" aria-hidden="true"></i>
- -->                                                                    <i  ng-click='todo.delete(item.id)' class="fa fa-times-circle" aria-hidden="true"></i>
-                                                                        </div>
-                                                                        <div class="knife ">
-                                                                                    <img src="/images/knife_PNG1512_small.png " alt="cut it ">
-                                                                        </div>
-                                                                        <form ng-submit="todo.submit(todo.content)">
-                                                                                    <input  disabled  type='text' class='new-todo' value="{{item.description}}">
-                                                                        </form>
-                                                            </div>
-
-
-
-
-
-                                                            <div class="item">
-                                                                        <div class="actions">
-                                                                                    <!-- <i class="fa fa-check-circle" aria-hidden="true"></i> -->
-                                                                                  
-                                                                        </div>
-                                                                        <div class="knife ">
-                                                                                    <img src="/images/knife_PNG1512_small.png " alt="cut it ">
-                                                                        </div>
-                                                                        <form ng-submit="todo.submit(todo.content)">
-                                                                                    <input  ng-model='todo.content'  type='text' class='new-todo' placeholder='What shall we slay today? Type it here...'>
-                                                                        </form>
-                                                            </div>
+                                                            <p>Gotta get shit done? Feeling extra stabby?
+                                                                        <br>We feel you – let's make a list and slay.</p>
                                                 </div>
                                     </div>
-                                    <footer>
-                                                <nav>
-                                                            <ul>
-                                                                        <li>
-                                                                                    <button class='show-all active'>All</button>
-                                                                        </li>
-                                                                        <li>
-                                                                                    <button class='show-active'>Active</button>
-                                                                        </li>
-                                                                        <li>
-                                                                                    <button class='show-completed'>Completed</button>
-                                                                        </li>
-                                                            </ul>
-                                                            <p class='remaining'><span class='incomplete-items'>0</span> items left</p>
-                                                </nav>
-                                    </footer>
+                                    <!-- item in todo.items is my for each loop-->
+                                    <div ng-repeat='item in todo.items track by $index' class="item">
+                                                <div class="actions">
+                                                            <!--<i class="fa fa-check-circle" aria-hidden="true"></i>-->
+                                                            <i ng-click='todo.delete(item.id)' class="fa fa-times-circle" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="knife ">
+                                                            <img src="/images/knife_PNG1512_small.png " alt="cut it ">
+                                                </div>
+                                                <form ng-submit="todo.submit(todo.content)">
+                                                            <input disabled type='text' class='new-todo' value="{{item.description}}">
+                                                </form>
+                                    </div>
+                                    <div class="item">
+                                                <div class="actions">
+                                                <!-- <i class="fa fa-check-circle" aria-hidden="true"></i> -->
+                                                </div>
+                                                <div class="knife ">
+                                                            <img src="/images/knife_PNG1512_small.png " alt="cut it ">
+                                                </div>
+                                                <form ng-submit="todo.submit(todo.content)">
+                                                            <input ng-model='todo.content' type='text' class='new-todo' placeholder='What shall we slay today? Type it here...'>
+                                                </form>
+                                    </div>
                         </div>
-                        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js "></script>
-                        <script src='main.js'></script>
-                        <script src='factory/main_factory.js'></script>
-                        <script src='controllers/user_controller.js'></script>
-                        <script src='controller/main_controller.js'></script>
-                        <script src='controllers/user_controller.js'></script>
+            </div>
+            <footer>
+                        <nav>
+                                    <ul>
+                                                <li>
+                                                            <button class='show-all active'>All</button>
+                                                </li>
+                                                <li>
+                                                            <button class='show-active'>Active</button>
+                                                </li>
+                                                <li>
+                                                            <button class='show-completed'>Completed</button>
+                                                </li>
+                                    </ul>
+                                    <p class='remaining'><span class='incomplete-items'>0</span> items left</p>
+                        </nav>
+            </footer>
+</div>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js "></script>
+            <script src='main.js'></script>
+            <script src='factory/main_factory.js'></script>
+            <script src='controllers/user_controller.js'></script>
+            <script src='controller/main_controller.js'></script>
+            <script src='controllers/user_controller.js'></script>
 </body>
 
 </html>
