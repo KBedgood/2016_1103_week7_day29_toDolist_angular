@@ -3,7 +3,7 @@
 
         angular
             .module('stabList')
-            .factory('newController', function(user) {
+            .factory('userController', function(user) {
 
                 let vm = this;
 

@@ -1,4 +1,4 @@
-(function() {
+¡(function() {
     'use strict';
 
     // Factory manipulate data (adding / deleting to array, marking as complete...)
